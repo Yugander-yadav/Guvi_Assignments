@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table,th,td{
+        border:1px solid black ;
+        border-collapse: collapse;
+    }
+    th,td{
+        text-align: center;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+
+
+
+<!-- 1st Question -->
+
+<h2>1st Question:Answer (spot the error )</h2>
+<pre>
+&lthtml lang="en"&gt
+&lthead&gt
+    &lttitle&gtDocument &lt/title&gt
+&lt/head&gt
+
+&ltbody&gt
+   &lth2&gtguvi&lt/h2&gt
+
+    &ltdiv&gt &ltp&gt Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt/p&gt&lt/div&gt
+     &ltdiv&gt &ltp&gt Guvi Geek Network&lt/p&gt&lt/div&gt
+
+&lt/body&gt
+
+&lt/html&gt
+<hr>
+<h2>2nd Question:Answer (spot the error )</h2>
+&lthtml lang="en"&gt
+
+&lthead&gt
+&lttitle&gtDocument
+
+&lt/head&gt
+
+&ltbody&gt
+&ltdiv&gt
+    &lth1&gt guvi&lt/h1&gt
+&lt/div&gt
+
+&ltdiv&gt
+    &ltp&gt Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt/p&gt
+    &ltdiv&gt
+        &ltdiv&gt
+            &ltp&gt Guvi Geek Network &lt/p&gt
+        &lt/div&gt
+&lt/body&gt
+
+&lt/html&gt
+</pre>
+<hr>
+<h2>Question 3 : Contact US form </h2>
+<div class="form" style="border:2px solid gray">
+<form action="#">
+    <label for="name">Name</label> <input type="text" name="name" id="name" placeholder="Name" required> <br>
+    <label for="email">Email</label><input type="email" name="email" id="email" placeholder="Email" required><br>
+    <label for="phone">Phone Number</label> <input type="text" name="text" id="phone" placeholder="+91 9999999999" required><br>
+    <textarea name="comments" id="comments" cols="40" rows="3" placeholder="Please enter your concern"></textarea><br>
+    <input type="submit" value="submit">
+</form>
+</div>
+<hr>
+<h4> Question 4 : Programming Languages list</h4>
+
+<ul>
+    <li>Programming Language</li>
+        <ul type="circle">
+            <li>JavaScript</li>
+            <ol type="a">
+                <li>Angular</li>
+                <li>React</li>
+                <li>Vue.js</li>
+            </ol>
+            <li>Python</li>
+                <ol type="a">
+                    <li>Django Framework</li>
+                    <li>Flask Framework</li>
+                </ol>
+            <li>Java</li>
+                <ol type="a">
+                    <li>Spring</li>
+                    <li>Maven</li>
+                    <li>Hibernate</li>
+                </ol>
+        </ul>
+    <li>Database</li>
+        <ul type="circle">
+            <li>MySQL</li>
+            <li>MangoDB</li>
+            <li>Casandra</li>
+        </ul>
+    
+</ul>
+
+<hr>
+<h3>Question 5  Create an element that helps you to open the https://google.com in separate new tab. </h3>
+    <a href="https://google.com" target="_blank">Click here to visit google website </a>
+<hr>
+<h3>Question 6 In the form, add two radio buttons with grouping them for employee type(Salaried and own business) </h3>
+<div style="border:2px solid gray">
+    <form action="#">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email"> <br>
+        <label>Employment Status:</label>
+        <label for="Salaried">Salaried</label>
+        <input type="radio" name="work" id="Salaried">
+        <label for="OwnBusiness">Own Business</label>
+        <input type="radio" name="work" id="OwnBusiness"> <br>
+        <input type="submit" value="submit">
+    </form>
+</div>
+<hr>
+<h3>Question 7 Design form shown in the link <a href="http://evc-cit.info/cit040/formguide/card_0.png">Form Link</a></h3>
+<div style="width: 90vh; border:2px solid black">
+    <h2 style="background-color: red;color: white; text-align: center;">Yes! I want to Subscribe to Mag-O-Zine</h2>
+<form action="">
+<div style=" display: inline-block;">
+    <input type="text" name="" id="">
+    <br>
+    <label for="">First Name</label>
+</div>
+<div style=" display: inline-block;">
+    <input type="text" name="" id="">
+    <br>
+    <label for=""> Last Name</label>
+</div>
+<br>
+<div style=" display: inline-block;">
+    <div style="display: inline-block;"><input type="text" name="" id="">
+        <br>
+         <label for=""> City</label>
+     </div>
+    <div style="display: inline-block;"><input type="text" name="" id="">
+        <br>
+         <label for=""> State</label>
+     </div>
+    <div style="display: inline-block;"><input type="text" name="" id="">
+        <br>
+         <label for=""> Zip</label>
+     </div>
+</div>
+<div style="display: inline-block;">
+<label for="">Subscribe for:</label>
+
+<input type="checkbox" id="1year"> 
+<label for="1year">1 Year ($19.95)</label>
+
+<input type="checkbox" id="2years"> 
+<label for="2years">2 Years ($35.00)</label>
+</div>
+<br>
+<div style="display: inline-block;">
+<Label>Send me more information about:</Label>
+<br>
+<input type="checkbox" id="Computer-Zine"> 
+<label for="Computer-Zine">Computer-Zine</label>
+<br>
+<input type="checkbox" id="Fishing-Zine"> 
+<label for="Fishing-Zine">Fishing-Zine</label>
+<br>
+<input type="checkbox" id="Cat-O-Zine"> 
+<label for="Cat-O-Zine">Cat-O-Zine</label>
+
+
+</div>
+
+</form>
+
+</div>
+
+
+<hr>
+<h3>Question 8 : Use the table tag to design given image  <a href="https://www.bapugraphics.com/assets/img/port_upload_dir/table-4.jpg">Image </a>
+</h3>
+<div>
+<table>
+    <tr>
+        <th rowspan="2"> 
+            State of Health
+        </th>
+        <th colspan="2">FastingValue</th>
+        <th>After Eating</th>
+    </tr>
+    <tr>
+        <td>Minimum</td>
+        <td>Maximum</td>
+        <td>2 hours after eating</td>
+    </tr>
+    <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>Less than 140</td>
+    </tr>
+    <tr>
+        <td>Pre-Diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+    </tr>
+    <tr>
+        <td>Diabetes</td>
+        <td>More that 126</td>
+        <td>N/A</td>
+        <td>More than 200</td>
+    </tr>
+
+   
+    
+</table>
+</div>
+<hr>
+<h3>Question 9 : Write HTML input tags snippet to show default values for all Form elements.</h3>
+
+<form action="#">
+    <label for="name">Name</label>
+    <input type="text" value="name" id="name">
+    <br>
+    <label for="age">Age</label>
+    <input type="text" value="age" id="age">
+    <br>
+    <label for="address">Address</label>
+    <input type="text" value="address" id="address">
+    <br>
+    <input type="submit" value="submit">
+    
+</form>
+<hr>
+
+<h3>
+   Question 10 : In your, HTML page add the below line and Highlight it without using any CSS. "HTML & CSS is awesome"
+</h3>
+<p> <i> HTML & CSS is awesome </i></p>
+
+<pre>     * i have used italic &lt&rt tab to Highlight the above text</pre>
+<hr>
+<h3>Question 11 :Create an HTML page, which should contain all types of input elements.</h3>
+<form action="">
+    <div style=" display: inline-block;">
+        <input type="text" name="" id="">
+        <br>
+        <label for="">First Name</label>
+    </div>
+    <div style=" display: inline-block;">
+        <input type="text" name="" id="">
+        <br>
+        <label for=""> Last Name</label>
+    </div>
+    <br>
+    <div style=" display: inline-block;">
+        <div style="display: inline-block;"><input type="text" name="" id="">
+            <br>
+             <label for=""> City</label>
+         </div>
+        <div style="display: inline-block;"><input type="text" name="" id="">
+            <br>
+             <label for=""> State</label>
+         </div>
+        <div style="display: inline-block;"><input type="text" name="" id="">
+            <br>
+             <label for=""> Zip</label>
+         </div>
+    </div>
+    <div style="display: inline-block;">
+    <label for="">Subscribe for:</label>
+    
+    <input type="checkbox" id="1year"> 
+    <label for="1year">1 Year ($19.95)</label>
+    
+    <input type="checkbox" id="2years"> 
+    <label for="2years">2 Years ($35.00)</label>
+    </div>
+    <br>
+    <div style="display: inline-block;">
+    <Label>Send me more information about:</Label>
+    <br>
+    <input type="checkbox" id="Computer-Zine"> 
+    <label for="Computer-Zine">Computer-Zine</label>
+    <br>
+    <input type="checkbox" id="Fishing-Zine"> 
+    <label for="Fishing-Zine">Fishing-Zine</label>
+    <br>
+    <input type="checkbox" id="Cat-O-Zine"> 
+    <label for="Cat-O-Zine">Cat-O-Zine</label>
+   <br>
+   <input type="submit" value="submit">
+    
+    </div>
+    
+    </form>
+
+</body>
+</html>
